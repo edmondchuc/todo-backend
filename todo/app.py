@@ -34,9 +34,9 @@ def create_app(config_object="todo.settings"):
 from todo.resources.user import UserResource
 api.add_resource(
     UserResource,
-    '/user',
-    '/user/<int:user_id>',
-    '/user/<string:username>',
+    '/users',
+    '/users/<int:user_id>',
+    '/users/<string:username>',
 )
 
 # Register Flask-Admin views
